@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        section {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            margin: auto; /* Center form horizontally and add space around it */
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"], 
+        input[type="number"], 
+        input[type="email"], 
+        select {
+            width: calc(100% - 22px); 
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        .gender-options {
+            margin-bottom: 15px;
+        }
+        .gender-options label {
+            margin-right: 15px;
+        }
+        button {
+            background-color: #388E3B;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2c6b2f;
+        }
+        .hero {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+        .hero img {
+            width: 300px;
+            height: auto;
+        }
+        .hero .text-content {
+            max-width: 500px;
+        }
+        .hero h1 {
+            margin: 0;
+        }
+        .last-content {
+            background-color: #263238;
+            color: white;
+            padding: 20px;
+            width: 100%;
+            margin-top: auto; /* Ensure it pushes to the bottom */
+            box-sizing: border-box; /* Include padding and border in width */
+        }
+        .last-content table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .last-content td {
+            padding: 10px;
+            vertical-align: top;
+        }
+        .last-content img {
+            width: 200px;
+            height: auto;
+            margin-right: 15px;
+        }
+        .last-content h4 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .last-content h6 {
+            margin: 0;
+            font-size: 14px;
+        }
+        .last-content input[type="email"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .email-button-container {
+            display: flex;
+            align-items: center;
+            gap: 5px; 
+            padding-top: 20px;
+        }
+        .green-button {
+            background-color: #43A046;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+            flex-shrink: 0; 
+        }
+        .green-button:hover {
+            background-color: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <img src="Images/Nav Container.png" alt="Nav Container" style="display: block; margin: 0 auto; width: 1000px; height: auto;">
+    </section>
+    <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+        <form>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age">
+            
+            <label for="email">Email Id:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address">
+            
+            <label>Gender:</label>
+            <div class="gender-options">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="preferNotToSay" name="gender" value="preferNotToSay">
+                <label for="preferNotToSay">Prefer not to say</label>
+            </div>
+            
+            <label for="qualification">Qualification:</label>
+            <select id="qualification" name="qualification">
+                <option value="">Choose...</option>
+                <option value="10th">10th</option>
+                <option value="Higher Secondary">Higher Secondary</option>
+                <option value="Undergraduate">Undergraduate</option>
+                <option value="Post Graduate">Post Graduate</option>
+                <option value="Other">Other</option>
+            </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="last-content">
+        <table>
+            <tr>
+                <td>
+                    <div style="display: flex; align-items: flex-start;">
+                        <img src="Images/Company Copyright Info.jpg" alt="Company Copyright Info">
+                        <div>
+                            <h4>Company</h4>
+                            <br>
+                            <br>
+                            <h6>
+                                About us<br><br>
+                                Blog<br><br>
+                                Contact us<br><br>
+                                Pricing<br><br>
+                                Testimonials
+                            </h6>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <h4>Support</h4>
+                    <br>
+                    <br>
+                    <h6>
+                        Help center<br><br>
+                        Terms of service<br><br>
+                        Legal<br><br>
+                        Privacy policy<br><br>
+                        Status
+                    </h6>
+                </td>
+                <td>
+                    <h4>Stay up to date</h4>
+                    <div class="email-button-container">
+                        <input type="email" placeholder="Your email address" id="emailInput">
+                        <button class="green-button">Send</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

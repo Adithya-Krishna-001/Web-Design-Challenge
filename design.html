@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourzGen</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .hero {
+            display: flex;
+            gap: 100px;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #F5F7FA;
+            color: #4D4D4D;
+        }
+        .hero img {
+            width: 200px;
+            height: auto;
+        }
+        .hero .text-content {
+            margin-right: -30px; 
+        }
+        .hero button{
+            background-color: #43A046;
+            margin-top: 10px;
+            border-radius: 3px;
+            padding: 10px 25px;
+            font-size: 10px;
+            border-width: 0px;
+            cursor: pointer;
+        }
+
+        .clients-section, .community-section {
+            text-align: center;
+            margin: 40px 0;
+        
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+        }
+        .box {
+            flex: 1;
+            margin: 0 10px;
+            min-width: 200px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .box img {
+            width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        .box h3, .box h6 {
+            margin: 0;
+        }
+        .feature-section {
+            overflow: hidden;
+            padding: 20px;
+        }
+        .feature-section img {
+            float: left;
+            width: 300px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .feature-section button {
+            background-color: #43A046;
+            border-radius: 3px;
+            border-width: 0px;
+            margin-top: 10px;
+            padding: 10px 30px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+        .local-business {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #F5F7FA;
+        }
+        .local-business img {
+            max-height: 500px;
+            max-width: 300px;
+            margin-left: 90px;
+        }
+
+        .design-section button{
+            background-color: #43A046;
+            border-radius: 3px;
+            border-width: 0px;
+            margin-top: 10px;
+            padding: 10px 30px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            vertical-align: top;
+            padding: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .center-content {
+            text-align: center;
+            margin: 20px;
+        }
+        .center-content img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+        .demo-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+            text-align: center;
+            background-color: #F5F7FA;
+        }
+        .demo-section h1 {
+            margin-bottom: 10px;
+        }
+        .demo-section button {
+            background-color: #43A046;
+            border-radius: 3px;
+            border-width: 0px;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+        .green-button {
+            background-color: #43A046;
+            border-radius: 2px;
+            border-width: 0px;
+            color: white;
+        }
+
+        .last-content h4{
+            color: white;
+        }
+
+        .last-content h6{
+            color: white;
+        }
+
+        .last-content{
+            background-color: #263238;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <img src="Images/Nav Container.png" alt="Nav Container" style="display: block; margin: 0 auto; width: 1000px; height: auto;">
+    </section>
+
+    <section class="hero">
+        <div class="text-content">
+            <h1>Lessons and insights</h1>
+            <h1 style="color: #43A046;">from 8 years</h1>
+            <h6>Where to grow your business as a photographer</h6>
+            <a href="register.html">
+                <button style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Register</button>
+            </a>
+        </div>
+        <img src="Images/Hero Illustration.png" alt="Hero Illustration">
+    </section>
+
+    <section class="clients-section">
+        <h2 style="color:#414141;">Our Clients</h2>
+        <h6 style="color: #414141;">We have been working with some Fortune 500+ clients</h6>  
+        <img src="Images/Clients Logos.png" alt="Clients Logos" width="750">
+    </section>
+
+    <div class="community-section">
+        <h2 style="color: #414141;">Manage your entire community<br>in a single system</h2>
+        <h6 style="color: #414141;">Who is Nextcent suitable for?</h6>
+        <div class="container">
+            <div class="box">
+                <img src="Images/img1.png" alt="img1">
+                <h3 style="color: #4D4D4D;">Membership<br>Organisations</h3>
+                <br>
+                <h6 style="color: #414141;">Our membership management<br>
+                    software provides full automation of<br>
+                    membership renewals and payments</h6>
+            </div>
+            <div class="box">
+                <img src="Images/img2.png" alt="img2">
+                <h3 style="color: #4D4D4D;">National<br>Associations</h3>
+                <br>
+                <h6 style="color: #414141;">Our membership management<br>
+                    software provides full automation of<br>
+                    membership renewals and<br>
+                    payments
+                </h6>
+            </div>
+            <div class="box">
+                <img src="Images/img3.png" alt="img3">
+                <h3 style="color: #4D4D4D;">Clubs and Groups</h3>
+                <br>
+                <h6 style="color: #414141;">Our membership management<br>
+                    software provides full automation of<br>
+                    membership renewals and payments
+                </h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature-section">
+        <img src="Images/Feature 1 Illustration.png" alt="Feature 1 Illustration">
+        <h2 style="color: #414141;">The unseen of spending three<br>years at Pixelgrade</h2>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum.Sed<br>
+            accumsan quam vitae est varius fringilla.Pellentesque placerat vestibulum lorem sed<br>
+            porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor.Etiam<br>
+            quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</h6>
+        <button style="display: block; margin-top: 10px;">Learn more</button>
+    </div>
+
+    <section class="local-business">
+        <div>
+            <h3 style="color: #414141;">Helping a local</h3>
+            <h3 style="color: #43A046;">business reinvent itself</h3>
+            <h6>We reached here with our hard work and dedication</h6>
+        </div>
+        <img src="Images/Counts.png" alt="Counts">
+    </section>
+
+    <div class="design-section">
+        <table>
+            <tr>
+                <td>
+                    <img src="Images/Feature 2 Illustration.png" alt="Feature 2 Illustration" style="width: 300px;">
+                </td>
+                <td style="padding-left: 10px;">
+                    <h2 style="color: #414141;">How to design your site footer like we did</h2>
+                    <h6 style="color: #414141;">Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt<br>
+                        molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at<br>
+                        libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at<br>
+                        porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna<br>
+                        tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent<br>
+                        felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetuer faucibus<br>
+                        ipsum id gravida.
+                    </h6>
+                    <button>Learn more</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; padding: 20px;background-color: #F5F7FA;">
+        <img src="Images/Frame 14.png" alt="frame 14" style="width: 250px; height: auto; margin-right: 20px;">
+        <div>
+            <h6 style="color: #414141;">
+                Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, cel rutrum risus<br>
+                tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida<br>
+                enim. Nullam ut molestie arcu, at henderit elit. Morbi laoreet elit at ligula molestie, nec molestie<br>
+                mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse<br>
+                eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien,<br>
+                vitae placeret ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum<br>
+                id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.
+            </h6>
+            <h3 style="color: #43A046;">Tim Smith</h3>
+            <h6 style="color: #414141;">British Dragon Boat Racing Association</h6>
+            <img src="Images/Customers.png" alt="Customers" style="display: block; margin: 20px auto; width: 500px; height: auto;">
+        </div>
+    </div>
+
+    <div class="center-content">
+        <h2 style="color: #414141;">Caring is the new marketing</h2>
+        <h6 style="color: #414141;">The Nexcent blog is the best place to read about the latest membership insights,<br>
+            trends and more. See who's joining the community, read about how our community<br>
+            are increasing their membership income and lots more
+        </h6>
+        <img src="Images/Community Updates.png" alt="Community Updates" style="width: 80%; max-width: 950px; height: auto;">
+    </div>
+
+    <div class="demo-section">
+        <div>
+            <h1 style="color: #414141;">Wanna try our app?</h1>
+            <button>Get a Demo</button>
+        </div>
+    </div>
+
+    <div class="last-content" style="background-color: #263238;">
+        <table>
+            <tr>
+                <td>
+                    <div style="display: flex; align-items: flex-start;">
+                        <img src="Images/Company Copyright Info.jpg" alt="Company Copyright Info" style="width: 200px; height:auto; margin-right: 15px;">
+                        <div>
+                            <h4>Company</h4>
+                            <h6>
+                                About us<br><br>
+                                Blog<br><br>
+                                Contact us<br><br>
+                                Pricing<br><br>
+                                Testimonials
+                            </h6>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <h4>Support</h4>
+                    <h6>
+                        Help center<br><br>
+                        Terms of service<br><br>
+                        Legal<br><br>
+                        Privacy policy<br><br>
+                        Status
+                    </h6>
+                </td>
+                <td>
+                    <h4>Stay up to date</h4>
+                    <input type="email" placeholder="Your email address" id="emailInput">
+                    <button class="green-button">Send</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
