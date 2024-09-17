@@ -6,5 +6,6 @@ This is a small static webpage developed by me using HTML and CSS,HTML being use
 I couldn't use Javascript for writing the code since i haven't yet learned the language.
 
 
-To get to the registering page,
-Click on the "Register" Button on the first Section in the landing page where you will be forwarded to a page where you can register in the CuurzGen Porgraamme by entering your details
+To get to the registering page, Click on the "Register" Button on the first Section in the landing page where you will be forwarded to another page.There you can register in the CourzGen Programme by entering your details and Click "Submit".
+
+Thankyou
